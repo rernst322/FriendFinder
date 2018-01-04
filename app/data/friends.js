@@ -3,52 +3,21 @@
 //Friends
 var friends = [
 {
-	name: "Bill Clinton",
-	photo: "http://media.breitbart.com/media/2015/12/Bill-Clinton-cigar-GettyImages.jpg",
+	name: "George W. Bush",
+	photo: "http://newsfrompolitics.com/wp-content/uploads/2016/06/george-w-bush.jpg",
 	scores: [
-		1,
-		2,
-		3,
-		4,
-		5,
-		5,
-		4,
-		3,
-		2,
-		1
-	]
-},
-	{
-	name: "Bill Clinton",
-	photo: "http://media.breitbart.com/media/2015/12/Bill-Clinton-cigar-GettyImages.jpg",
-	scores: [
-		1,
-		2,
-		3,
-		4,
-		5,
-		5,
-		4,
-		3,
-		2,
-		1
-	]
-},
-{
-	name: "Bill Clinton",
-	photo: "http://media.breitbart.com/media/2015/12/Bill-Clinton-cigar-GettyImages.jpg",
-	scores: [
-		1,
-		2,
-		3,
-		4,
-		5,
-		5,
-		4,
-		3,
-		2,
-		1
-	]
+	1,
+	1,
+	1,
+	1,
+	1,
+	1,
+	1,
+	1,
+	1,
+	1,
+	1,]
+
 }
 ];
 

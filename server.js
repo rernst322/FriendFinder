@@ -19,6 +19,20 @@ app.use(bodyParser.json());
 require("./app/routing/apiRoutes")(app);
 require("./app/routing/htmlRoutes")(app);
 
+app.get("/", function(req, res){
+	res.sendFile(path.join(__dirname, "home.html"));
+});
+
+app.get("/survey", function(req, res){
+	res.sendFile(path.join(__dirname, "survey.html"));
+});
+
+//app.get new friend
+
+
+//creates new friends
+
+
 /*
 app.get("/", function(req, res){
 	res.sendFile(path.join(__dirname, "app/public/home.html"));
@@ -41,7 +55,7 @@ app.get("/api/:friends", function(req, res){
 		for(var i = 0; i < friends.lenth; i++){
 			if (chosen === friends[i].routeName) {
 				return res.json(friends[i]);
-			}
+			},nbvc
 		}
 		return res.json(false);
 	}

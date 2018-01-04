@@ -26,7 +26,7 @@
 
 		<div class="form-group">
 			<label for="picture">Photo (Required)</label>
-			<input type="url" class="form-control" id="picture" size="100">
+			<input text="text" class="form-control" id="picture" size="100">
 		</div>
 
 
@@ -34,8 +34,8 @@
 
 		<div class="form-group">
 			<label for="q1"><h3>Question 1</h3></label>
-				<p>A questions about something 1</p>
-				<select class="form-control" id="q1">
+				<p>Your mind is always buzzing with unexplored ideas and plans.</p>
+				<select class="form-control" id="quiz-ans-1">
 					<option value="">Select an Option</option>
 					<option value="5">5 (Strongly Agree)</option>
 					<option value="4">4 (Agree)</option>
@@ -47,7 +47,7 @@
 
 		<div class="form-group">
 			<label for="q2"><h3>Question 2</h3></label>
-				<p>A questions about something 2</p>
+				<p>Generally speaking, you rely more on your experience than your imagination.</p>
 			<select class="form-control" id="quiz-ans-2">
 					<option value="">Select an Option</option>
 					<option value="5">5 (Strongly Agree)</option>
@@ -60,7 +60,7 @@
 
 		<div class="form-group">
 			<label for="q3"><h3>Question 3</h3></label>
-				<p>A questions about something 3</p>
+				<p>You find it easy to stay relaxed and focused even when there is some pressure.</p>
 				<select class="form-control" id="quiz-ans-3">
 					<option value="">Select an Option</option>
 					<option value="5">5 (Strongly Agree)</option>
@@ -73,7 +73,7 @@
 
 		<div class="form-group">
 				<label for="q4"><h3>Question 4</h3></label>
-				<p>A questions about something 4</p>
+				<p>You rarely do something just out of sheer curiosity.</p>
 					<select class="form-control" id="quiz-ans-4">
 					<option value="">Select an Option</option>
 					<option value="5">5 (Strongly Agree)</option>
@@ -86,7 +86,7 @@
 
 		<div class="form-group">
 			<label for="q5"><h3>Question 5</h3></label>
-				<p>A questions about something 5</p>
+				<p>People can rarely upset you.</p>
 			<select class="form-control" id="quiz-ans-5">
 					<option value="">Select an Option</option>
 					<option value="5">5 (Strongly Agree)</option>
@@ -99,7 +99,7 @@
 
 		<div class="form-group">
 			<label for="q6"><h3>Question 6</h3></label>
-				<p>A questions about something 6</p>
+				<p>It is often difficult for you to relate to other people’s feelings.</p>
 				<select class="form-control" id="quiz-ans-6">
 					<option value="">Select an Option</option>
 					<option value="5">5 (Strongly Agree)</option>
@@ -112,7 +112,7 @@
 
 		<div class="form-group">
 			<label for="7"><h3>Question 7</h3></label>
-				<p>A questions about something 7</p>
+				<p>In a discussion, truth should be more important than people’s sensitivities.</p>
 				<select class="form-control" id="quiz-ans-7">
 					<option value="">Select an Option</option>
 					<option value="5">5 (Strongly Agree)</option>
@@ -125,7 +125,7 @@
 
 		<div class="form-group">
 			<label for="q8"><h3>Question 8</h3></label>
-			<p>A questions about something 8</p>
+			<p>You rarely get carried away by fantasies and ideas.</p>
 			<select class="form-control" id="quiz-ans-8">
 					<option value="">Select an Option</option>
 					<option value="5">5 (Strongly Agree)</option>
@@ -138,7 +138,7 @@
 
 		<div class="form-group">
 			<label for="q9"><h3>Question 9</h3></label>
-				<p>A questions about something 9</p>
+				<p>You think that everyone’s views should be respected regardless of whether they are supported by facts or not.</p>
 			<select class="form-control" id="quiz-ans-9">
 					<option value="">Select an Option</option>
 					<option value="5">5 (Strongly Agree)</option>
@@ -151,7 +151,7 @@
 
 		<div class="form-group">
 			<label for="q10"><h3>Question 10</h3></label>
-				<p>A questions about something 10</p>
+				<p>You feel more energetic after spending time with a group of people.</p>
 				<select class="form-control" id="quiz-ans-10">
 					<option value="">Select an Option</option>
 					<option value="5">5 (Strongly Agree)</option>
@@ -162,29 +162,32 @@
 			</select>
 		</div>
 	
-		<button type="button" class="btn btn-success" data-toggle="modal" data-target="#myModal" id="submit">FIND ME A FRIEND</button>
+		<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal" id="submit">FIND ME A FRIEND</button>
 	</form>
 
 	<!--<div id="myModal" class="modal fade" role="dialog">-->
 		<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="friendModalLabel" aria-hidden="true">
 		  <div class="modal-dialog" role="document">
 		    <div class="modal-content">
-		      <div class="modal-header">
-		        <h5 class="modal-title" id="ModalLabel">Your New Friend</h5>
+		      <div class="modal-header">CONGRATS!</div>
+		        
+		        
+		      
+		      <div class="modal-body">
+		        <h5 class="modal-title" id="ModalLabel"></h5>
+		        <img id="picture" width="300" src="">
+		      </div>
+		      <div class="modal-footer">
+		        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+		        <a href="/"><button type="button" class="btn btn-primary" >Home</button></a>
 		        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
 		          <span aria-hidden="true">&times;</span>
 		        </button>
 		      </div>
-		      <div class="modal-body">
-		        <!--BODY OF MODAL-->
-		      </div>
-		      <div class="modal-footer">
-		        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-		        <a href="/survey"><button type="button" class="btn btn-primary" >Find A New Friend</button></a>
-		      </div>
 		    </div>
 		  </div>
-		</div>
+		  </div>
+		
 
 	<hr>
 	<div class="footer">
@@ -199,85 +202,157 @@
 </body>
 
 
-	
 
 
 <script type="text/javascript">
-	$("#success").on("click", function(event){
+	var nVal, imgVal, q1, q2, q3, q4, q5, q6, q7, q8, q9, q10, newFriend;
+	//var scores = ;
+
+	$("#submit").on("click", function(event){
 		event.preventDefault();
+		console.log("clicked");
+
+		nVal = $("#name").val().trim(),
+		imgVal =$("#picture").val().trim(),
+		q1 = parseInt($("#quiz-ans-1").val());
+		q2 = parseInt($("#quiz-ans-2").val().trim());
+		q3 = parseInt($("#quiz-ans-3").val().trim());
+		q4 = parseInt($("#quiz-ans-4").val().trim());
+		q5 = parseInt($("#quiz-ans-5").val().trim());
+		q6 = parseInt($("#quiz-ans-6").val().trim());
+		q7 = parseInt($("#quiz-ans-7").val().trim());
+		q8 = parseInt($("#quiz-ans-8").val().trim());
+		q9 = parseInt($("#quiz-ans-9").val().trim());
+		q10 = parseInt($("#quiz-ans-10").val().trim());
+			newFriend = {
+			name: nVal,
+			photo: imgVal,
+			scores: [q1, q2, q3, q4, q5, q6, q7, q8, q9, q10],
+			total: q1 + q2+ q3+ q4+ q5+ q6+ q7+ q8+ q9+ q10
+				};
 		
-		var newFriend = {
-			name: $("#name").val().trim(),
-			picture: $("#picture").val().trim(),
-			q1: $("#q1"),
-			q2: $("#quiz-ans-2"),
-			q3: $("#quiz-ans-3"),
-			q4: $("#quiz-ans-4"),
-			q5: $("#quiz-ans-5"),
-			q6: $("#quiz-ans-6"),
-			q7: $("#quiz-ans-7"),
-			q8: $("#quiz-ans-8"),
-			q9: $("#quiz-ans-9"),
-			q10: $("#quiz-ans-10")
-		};
+			var modalTitle = $('.modal-title');
+			var modalBody = $('.modal-body');
+			var modal = $('#modal');
+			var apiFriendRoute = '/api/friends';
 
-		console.log(newFriend);
-		console.log(q1);
-
-		$('#myModal').on('shown.bs.modal', function () {
-  	$('#myInput').trigger('focus')
+			if (formValid()){
+				$.get(apiFriendRoute, function(data){
+					var match = makeMatch(data);
+					if(match.name !== undefined){
+						modalTitle.text("You have a match!");
+						modalBody.html("<h2>Your new friend is: </h2>" + "\r <h3>" + match.name + '</h3><img src="' + match.photo + '"height="200">')
+					}else{
+						modalTitle.text("No Friends for you");
+						modalBody.html("<p>This is really embarrasing. I am sorry.</p>");
+					}
+				}).then(function(){
+					modal.show();
+					//$('.form')[0].empty();
+					$.post("/api/friends", newFriend);
+					//.done(function(data){
+						//console.log(data);
+					//});
+				});
+			} else{
+				modalTitle.text("Whoops!");
+				modalBody.text("Do you want to make a friend or not? You missed something");
+				modal.show();
+			}
 		});
-	});
 
-//friend finder function
-//app.get("/")
-function totalDifference() {
-	//user key array
-	//add each number
-	//
-	var difference = req.params.difference;
-//for loop to compare each question answer
-//then another for loop
-//parms user entered v each characters answer?
-//
-	var q1 = parseInt(req.params.q1);
-	var q2 = parseInt(req.params.q2);
-	var q3 = parseInt(req.params.q3);
-	var q4 = parseInt(req.params.q4);
-	var q5 = parseInt(req.params.q5);
-	var q6 = parseInt(req.params.q6);
-	var q7 = parseInt(req.params.q7);
-	var q8 = parseInt(req.params.q8);
-	var q9 = parseInt(req.params.q9);
-	var q10 = parseInt(req.params.q10);
-	var q;
-	var result;
-
-
-	switch(difference) {
-		case "diff":
-			q = q1 - q1;
-			q = q2 - q2;
-			q = q3 - q3;
-			q = q4 - q4;
-			q = q5 - q5;
-			q = q6 - q6;
-			q = q7 - q7;
-			q = q8 - q8;
-			q = q9 - q9;
-			q = q10 - q10;
-			result = sum(q);
-			break;
-
-			default:
-			result =
-			"Sorry you have no friends."
-
+	function formValid(){
+		return (nVal !== '' && imgVal !== '' && q1 !== '' && q2 !== '' && q3 !== '' && q4 !== '' && q5 !== '' && q6 !== '' && q7 !== '' && q8 !== '' && q9 !== '' && q10 !== '');
 	}
 
 
-}
+	function makeMatch(data){
+		var difference = 50;
+		var fName;
+		var fImg;
+		data.forEach(function(friend){
+			var localDiff = Math.abs(newFriend.total - friend.total);
+			if(localDiff < difference) {
+				difference = localDiff;
+				fName = friend.name;
+				fImg = friend.photo;
+			}
+		});
+		return {
+			name: fName,
+			photo: fImg
+		};
+	}
+/*
+	function makeMatch(data){
+		//var difference;
+		var fName;
+		var fImg;
+		data.forEach(function(friend){
+			var a1 = Math.abs(newFriend.q1 - friend.q1); 
+			var a2 = Math.abs(newFriend.q2 - friend.q2);
+			var a3 = Math.abs(newFriend.q3 - friend.q3);
+			var a4 = Math.abs(newFriend.q4 - friend.q4);
+			var a5 = Math.abs(newFriend.q5 - friend.q5);
+			var a6 = Math.abs(newFriend.q6 - friend.q6);
+			var a7 = Math.abs(newFriend.q7 - friend.q7);
+			var a8 = Math.abs(newFriend.q8 - friend.q8);
+			var a9 = Math.abs(newFriend.q9 - friend.q9);
+			var a10 = Math.abs(newFriend.q10 - friend.q10);
+			total: a1 + a2+ a3+ a4+ a5+ a6+ a7+ a8+ a9+ a10;
+			if(total = 0){
+				total = localDiff;
+				fName = friend.name;
+				fImg = friend.photo;
+			}
 
+		});
+
+	*\
+
+
+		//values of each question empty
+		//user 1
+		//user 2
+		//subtract each question
+		//total difference =0 (closest match)
+
+	}
+/*
+		$.post("/api/friends", newFriend)
+		.done(function(data){
+			console.log(data);
+		});
+
+		//var scores = [];
+		//for(var=i; i<10; i++)
+
+
+
+		$('#myModal').on('shown.bs.modal', function () {
+  		$('#myInput').trigger('focus')
+		})
+	
+		});
+
+
+
+		var quizComplete = true;
+		//complete form
+		for(i=0; i<allFields.length; i++){
+			if(allFields[i][1]= ""){
+				quizComplete = false;
+				console.log("You didn't answer everything");
+				alert("You missed something");
+				break;
+			}
+			else(
+				quizComplete = true)
+		}
+*/
+		
+
+	
 	
 </script>
 
